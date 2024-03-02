@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CSS -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="container">
+            <!-- Heading -->
+            <div class="heading league-spartan-regular">Password Generator</div>
+
+            <!-- Password Display Container -->
+            <div class="password-container league-spartan-regular">
+                <input readonly type="text" class="password" password-display placeholder="PASSWORD">
+                <div class="copybtn"><i class='bx bx-copy'></i></div>
+                <span class="copyMsg"></span>
+            </div>
+
+            <!-- Password Generator Controls -->
+            <div class="password-generator-container league-spartan-regular">
+                <div class="password-length-container" >
+                    <p>Password Length</p>
+                    <p class="password-length">10</p>
+                </div>
+                <div class="password-length-slider">
+                    <input type="range" min="1" max="20" value="10" class="slider" data-lengthSlider>
+                    
+                </div>
+                <ul class="links">
+                    <div class="btn-1 ">
+                        <input type="checkbox" class="uppercase btn-checkbox" name="uppercase" id="uppercase">
+                        <label for="uppercase">Include Uppercase Letters</label>
+                    </div>
+                    <div class="btn-1 ">
+                        <input type="checkbox" class="lowercase btn-checkbox" name="lowercase" id="lowercase">
+                        <label for="lowercase">Include Lowercase Letters</label>
+                    </div>
+                    <div class="btn-1 ">
+                        <input type="checkbox" class="numbers btn-checkbox" name="numbers" id="numbers">
+                        <label for="numbers">Include Numbers</label>
+                    </div>
+                    <div class="btn-1 ">
+                        <input type="checkbox" class="symbols btn-checkbox" name="symbols" id="symbols">
+                        <label for="symbols">Include Symbols</label>
+                    </div>
+                </ul>
+                <div class="password-strength">
+                    <p>Strength</p>
+                    <div class="led-light"></div>
+                </div>
+
+                <div class="password-generate-btn">GENERATE PASSWORD</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
